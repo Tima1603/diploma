@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewall Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            background-color: #336;
+            color: #ffb;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .pie-chart {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+        .slice {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            transform-origin: 100% 50%;
+            background-color: transparent;
+            clip-path: polygon(50% 50%, 100% 50%, 100% 0%);
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1>Firewall Interface</h1>
+    </div>
+    <div class="container">
+        <div class="column">
+            <button class="button">Button 1</button>
+            <button class="button">Button 2</button>
+            <button class="button">Button 3</button>
+        </div>
+        <div class="pie-chart">
+            <div class="slice" style="transform: rotate(0deg); background-color: red; clip-path: polygon(50% 50%, 100% 50%, 100% 0%);"></div>
+            <div class="slice" style="transform: rotate(144deg); background-color: blue; clip-path: polygon(50% 50%, 100% 50%, 100% 0%);"></div>
+            <div class="slice" style="transform: rotate(198.72deg); background-color: green; clip-path: polygon(50% 50%, 100% 50%, 100% 0%);"></div>
+            <div class="slice" style="transform: rotate(272.16deg); background-color: orange; clip-path: polygon(50% 50%, 100% 50%, 100% 0%);"></div>
+            <div class="slice" style="transform: rotate(317.52deg); background-color: purple; clip-path: polygon(50% 50%, 100% 50%, 100% 0%);"></div>
+            <div class="slice" style="transform: rotate(360deg); background-color: yellow; clip-path: polygon(50% 50%, 100% 50%, 100% 0%);"></div>
+        </div>
+    </div>
+</body>
+</html>
